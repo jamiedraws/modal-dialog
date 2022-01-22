@@ -1,0 +1,29 @@
+$select: ".form" !default;
+
+// layouts
+@use "Shared/scss/template/base/layouts/form";
+
+// abstracts
+@use "Shared/scss/template/base/abstracts/group";
+
+@mixin base {
+    @include form.base;
+    @include form.fieldset;
+    @include form.checkbox;
+
+    #{$select} {
+        &__group {
+            @include group.contain();
+        }
+
+        &__fieldset {
+            align-items: center;
+        }
+
+        &__label {
+            align-items: center;
+        }
+
+        @content;
+    }
+}

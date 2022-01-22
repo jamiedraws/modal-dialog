@@ -1,0 +1,552 @@
+/*!*********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../../../DTM/SVN/Websites/node_modules/css-loader/dist/cjs.js!../../../DTM/SVN/Websites/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!../../../DTM/SVN/Websites/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[3]!./css/app.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  width: 100%;
+  height: auto;
+}
+
+html {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+@supports (display: flex) {
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+}
+body > footer {
+  flex: 1;
+}
+
+main {
+  display: block;
+  flex: 1;
+}
+
+a:focus,
+button:focus,
+label:focus {
+  outline: 2px solid currentColor;
+}
+
+:link,
+:visited {
+  text-decoration: underline;
+  color: inherit;
+  word-break: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  word-break: break-word;
+}
+
+ul,
+ol {
+  margin-left: 1.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+img,
+iframe,
+picture,
+figure {
+  display: block;
+}
+
+iframe,
+img {
+  border: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+small {
+  font-size: 80%;
+}
+
+sup,
+sub {
+  font-size: 50%;
+  line-height: 0;
+  position: relative;
+  margin: 0 0.25em;
+}
+
+sup {
+  bottom: 0.33em;
+}
+
+sub {
+  bottom: -0.33em;
+}
+
+button,
+input,
+select {
+  background: none;
+  border: 0;
+  font-size: 16px;
+  border-radius: 0;
+  box-shadow: none;
+  word-break: break-all;
+  text-overflow: ellipsis;
+}
+button:not([type=checkbox]):not([type=radio]),
+input:not([type=checkbox]):not([type=radio]),
+select:not([type=checkbox]):not([type=radio]) {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+}
+
+button,
+select {
+  cursor: pointer;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  line-height: 1.45;
+}
+
+@supports (position: sticky) {
+  .view__anchor {
+    top: -6rem;
+  }
+}
+@media all and (max-width: 1000px) {
+  .view__anchor {
+    top: -6rem;
+  }
+}
+@supports (position: sticky) {
+  .view__scroll {
+    top: 6rem;
+  }
+}
+@media all and (max-width: 1000px) {
+  .view__scroll {
+    top: 6rem;
+  }
+}
+
+.defer--from-top::after {
+  top: calc(30vh - 6rem);
+}
+
+@media all and (max-width: 1000px) {
+  .defer--from-top::after {
+    top: calc(30vh - 6rem);
+  }
+}
+.view {
+  position: relative;
+}
+.view__anchor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.view__in {
+  position: relative;
+}
+.view__scroll {
+  position: sticky;
+}
+
+.section {
+  margin: 0;
+}
+.section__contain {
+  max-width: 1000px;
+  margin: auto;
+  box-sizing: content-box;
+}
+.section__in {
+  max-width: 1000px;
+  margin: auto;
+  box-sizing: content-box;
+  padding: 2rem;
+}
+.section__block {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.form {
+  min-width: 0;
+}
+.form__title {
+  font-size: 3.6rem;
+  text-align: center;
+  margin: 1rem;
+}
+@media all and (max-width: 1200px) {
+  .form__title {
+    font-size: clamp(2.5rem, 7vw, 3.6rem);
+  }
+}
+.form__is-hidden {
+  display: none;
+}
+.form__contain {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+  border: solid transparent;
+  border-width: 3px;
+  min-width: 0;
+  min-inline-size: 0;
+}
+.form__contain > * {
+  flex: 0 1 auto;
+}
+.form__field {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  min-width: 0;
+  padding: 1rem;
+  margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  border: 0;
+  background: white;
+  color: black;
+  font-family: inherit;
+}
+.form__error {
+  color: #c00;
+  font-weight: bold;
+}
+
+.form__fieldset {
+  border: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin: -1rem;
+}
+.form__fieldset > * {
+  margin: 1rem;
+}
+.form__fieldset > * {
+  flex: 1 1 15rem;
+}
+
+.form__checkbox-label {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.form__checkbox-label .form__label {
+  display: flex;
+}
+.form__checkbox-label input[type=checkbox],
+.form__checkbox-label input[type=radio] {
+  opacity: 0;
+  position: absolute;
+  padding: 0;
+}
+.form__checkbox-label input[type=checkbox]:checked ~ .form__checkbox, .form__checkbox-label input[type=checkbox]:checked ~ .form__label > .form__checkbox,
+.form__checkbox-label input[type=radio]:checked ~ .form__checkbox,
+.form__checkbox-label input[type=radio]:checked ~ .form__label > .form__checkbox {
+  background-image: url("data:image/svg+xml;charset=utf8,                        %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E                            %3Cpath fill='none' stroke-width='3px' stroke='green' d='M1.73,12.91 8.1,19.28 22.79,4.59'%3E%3C/path%3E                        %3C/svg%3E");
+  background-size: 0.9em 0.9em;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white;
+}
+.form__checkbox-label input[type=checkbox]:not(:checked) ~ .form__expando,
+.form__checkbox-label input[type=radio]:not(:checked) ~ .form__expando {
+  display: none;
+}
+.form__checkbox-label input[type=checkbox] ~ .form__checkbox,
+.form__checkbox-label input[type=checkbox] ~ .form__label > .form__checkbox,
+.form__checkbox-label input[type=radio] ~ .form__checkbox,
+.form__checkbox-label input[type=radio] ~ .form__label > .form__checkbox {
+  margin-right: 1rem;
+}
+.form__checkbox-label input[type=checkbox]:focus ~ .form__checkbox, .form__checkbox-label input[type=checkbox]:focus ~ .form__label > .form__checkbox,
+.form__checkbox-label input[type=radio]:focus ~ .form__checkbox,
+.form__checkbox-label input[type=radio]:focus ~ .form__label > .form__checkbox {
+  outline: 3px solid;
+}
+.form__checkbox-label input[type=checkbox]:disabled ~ .form__label,
+.form__checkbox-label input[type=radio]:disabled ~ .form__label {
+  opacity: 0.5;
+}
+.form__checkbox {
+  display: block;
+  -webkit-appearance: none;
+  border: 1px solid currentColor;
+  border-radius: 0.5rem;
+  background: white;
+  font-family: inherit;
+  font-size: inherit;
+  width: 2rem;
+  height: 2rem;
+  flex: 0 0 2rem;
+  padding: 0;
+  box-sizing: content-box;
+  position: relative;
+}
+
+.form__group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  overflow: hidden;
+  margin: -0.5rem;
+}
+.form__group > * {
+  flex: 0 1 auto;
+}
+.form__group > * {
+  margin: 0.5rem;
+}
+.form__fieldset {
+  align-items: center;
+}
+.form__label {
+  align-items: center;
+}
+
+.content > * + * {
+  margin-top: 1rem;
+}
+
+.modal-dialog__close {
+  flex: 0 0 auto;
+  width: 3em;
+  height: 3em;
+  display: block;
+  border: none;
+  background: none;
+  position: relative;
+}
+.modal-dialog__close::before, .modal-dialog__close::after {
+  content: "";
+  width: 0.2em;
+  height: inherit;
+  background: currentColor;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition: transform 300ms ease-out 0.35s;
+}
+.modal-dialog__close::before {
+  transform-origin: top right;
+  transform: rotateZ(-45deg) scaleY(1.35);
+  right: auto;
+}
+.modal-dialog__close::after {
+  transform-origin: top left;
+  transform: rotateZ(45deg) scaleY(1.35);
+  transition-delay: 0.7s;
+  left: auto;
+}
+.modal-dialog--is-hidden .modal-dialog__close::before {
+  transform: rotateZ(-45deg) scaleY(0);
+}
+.modal-dialog--is-hidden .modal-dialog__close::after {
+  transform: rotateZ(45deg) scaleY(0);
+}
+
+.modal-dialog__close::before, .modal-dialog__close::after {
+  transition-duration: 0.17s;
+}
+@media (prefers-reduced-motion: reduce) {
+  .modal-dialog__close::before, .modal-dialog__close::after {
+    transition: none;
+  }
+}
+.modal-dialog--container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  pointer-events: all;
+  z-index: 2;
+  overflow: hidden;
+}
+.modal-dialog--container .modal-dialog__backdrop {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  transition: opacity 0.3s ease-in-out;
+  background: rgba(0, 0, 0, 0.75);
+}
+.modal-dialog--container .modal-dialog__viewport {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  z-index: 1;
+  position: absolute;
+}
+.modal-dialog--container .modal-dialog__viewport::before, .modal-dialog--container .modal-dialog__viewport::after {
+  content: "";
+  flex: 0 0 0%;
+  margin: auto;
+}
+.modal-dialog--container .modal-dialog__close {
+  font-size: 0.5em;
+  cursor: pointer;
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: white;
+  transform: translateY(-140%);
+}
+.modal-dialog--container .modal-dialog__stage {
+  position: relative;
+  margin: 2.75em 0.5em;
+}
+.modal-dialog--container .modal-dialog__content {
+  background: white;
+  position: relative;
+  z-index: 1;
+}
+
+.modal-dialog--is-hidden {
+  pointer-events: none;
+  z-index: 1;
+  visibility: hidden;
+}
+.modal-dialog--is-hidden .modal-dialog__backdrop {
+  opacity: 0;
+}
+.modal-dialog--is-hidden .modal-dialog__close::before {
+  transition-delay: 0.35s;
+}
+.modal-dialog--is-hidden .modal-dialog__close::after {
+  transition-delay: 0.7s;
+}
+.modal-dialog--is-active {
+  z-index: 3;
+}
+.modal-dialog--is-active .modal-dialog__close::before {
+  transition-delay: 0.35s;
+}
+.modal-dialog--is-active .modal-dialog__close::after {
+  transition-delay: 0.7s;
+}
+.modal-dialog--is-open {
+  overflow: hidden;
+}
+.button {
+  font: bold 1.75rem/1 sans-serif;
+  word-break: break-word;
+  padding: 0.75em 1.5em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  background: none;
+  border: none;
+  position: relative;
+  z-index: 1;
+  border: 2px solid;
+  background: #350b79;
+  border-color: #350b79;
+  color: white;
+}
+.button > span {
+  pointer-events: none;
+}
+.button::before, .button::after, .button > span::before, .button > span::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+.button::after, .button:hover > span::after {
+  opacity: 0;
+}
+.button::after, .button > span::after {
+  transition: opacity 200ms ease-out;
+}
+.button:hover::after, .button:focus::after {
+  opacity: 1;
+}
+.button:hover, .button:focus {
+  background: none;
+}
+.button::before {
+  background: #350b79;
+}
+.button::after {
+  background: white;
+}
+.button:hover, .button:focus, .button.button--is-active {
+  color: #350b79;
+}
+.button.button--is-active::after {
+  opacity: 1;
+}
+
+.button {
+  font-size: 1em;
+}
+
+/*# sourceMappingURL=app.css.map*/

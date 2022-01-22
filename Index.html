@@ -4,21 +4,17 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Modal</title>
+        <title>Modal Dialog</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Arvo&family=Montserrat:wght@300&family=Pacifico&display=swap"
+            href="https://fonts.googleapis.com/css?family=Noto+Sans:300,400&amp;display=swap"
             rel="stylesheet"
         />
-
         <link rel="stylesheet" href="css/app.css" />
-        <script defer src="js/app.js"></script>
+        <script defer src="js/app.es5.js"></script>
     </head>
     <body class="page">
-        <header class="view header section">
-            <div class="view__in section__in">Modal Dialog Playground</div>
-        </header>
         <main class="view section">
             <div class="view__in section__in content">
                 <h1 class="content__title">Main Document Title</h1>
@@ -63,6 +59,7 @@
         <section
             aria-labelledby="demo-section-title-1"
             id="demo-section-1"
+            data-modal-dialog
             class="view section"
         >
             <div class="view__in section__in content">
@@ -101,6 +98,7 @@
         <section
             aria-labelledby="demo-section-title-2"
             id="demo-section-2"
+            data-modal-dialog
             class="view section"
         >
             <div class="view__in section__in content">

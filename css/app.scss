@@ -1,3 +1,16 @@
-@use "../shared/scss/components/modal-dialog";
+// layouts
+@use "layouts/document";
+@use "layouts/form";
+@use "layouts/content";
+
+// components
+@use "Shared/scss/template/base/components/modal-dialog";
+@use "components/button";
+
+@include document.base;
+@include form.base;
+@include content.base;
 
 @include modal-dialog.base;
+
+@include button.base;

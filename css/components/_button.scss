@@ -1,0 +1,14 @@
+$select: ".button" !default;
+
+// components
+@use "Shared/scss/template/base/components/button";
+
+@mixin base {
+    @include button.new(#350b79, white);
+
+    #{$select} {
+        font-size: 1em;
+
+        @content;
+    }
+}

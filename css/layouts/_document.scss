@@ -1,0 +1,18 @@
+// layouts
+@use "Shared/scss/template/base/layouts/document";
+@use "Shared/scss/template/base/layouts/view";
+@use "Shared/scss/template/base/layouts/section";
+
+@mixin base {
+    @include document.base;
+
+    body {
+        font-family: "Noto Sans", sans-serif;
+        line-height: 1.45;
+    }
+
+    @include view.base;
+    @include section.base;
+
+    @content;
+}

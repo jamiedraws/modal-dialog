@@ -1,0 +1,12 @@
+$select: ".content" !default;
+
+// abstracts
+@use "Shared/scss/template/base/abstracts/copy";
+
+@mixin base {
+    #{$select} {
+        @include copy.separate;
+
+        @content;
+    }
+}
