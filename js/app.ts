@@ -1,3 +1,3 @@
-import Modal from "../shared/ts/components/modal";
+import Modal from "Shared/ts/components/modal";
 
 const modal = new Modal();
