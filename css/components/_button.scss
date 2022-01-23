@@ -7,7 +7,7 @@ $select: ".button" !default;
     @include button.new(#350b79, white);
 
     #{$select} {
-        font-size: 1em;
+        font-size: 1.1em;
 
         @content;
     }
